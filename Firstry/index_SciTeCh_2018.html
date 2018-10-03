@@ -16,31 +16,31 @@
 <body>
     
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky">
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand " href="#"><img src="img/logo_scitech.png" class="tsttst"></a>
+        <a class="navbar-brand" href="#"><img src="img/logo_scitech.png" class="logonavsize"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Programa</a>
+                    <a class="nav-link" href="#programa">Programa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Regulamento</a>
+                    <a class="nav-link" href="#regulamento">Regulamento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="#apoios">Apoios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Apoios</a>
+                    <a class="nav-link" href="#bestpart">BEST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">BEST</a>
+                    <a class="nav-link" href="#FAQ">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
+                    <a class="nav-link" href="#contactos">Contactos</a>
                 </li>
             </ul>
         </div>
@@ -49,7 +49,7 @@
  
 <!-- Carousel slider -->
     
-<div id="slides" class="carousel slide" data-ride="carousel">
+<div id="slides" class="carousel slide" data-ride="carousel" data-interval="2000">
     <ul class="carousel-indicators">
         <li data-target="#slides" data-slide-to="0" class="active"></li>
         <li data-target="#slides" data-slide-to="1"></li>
@@ -116,7 +116,7 @@
         <div class="col-xs-12 col-sm-6 col-md-3">
             <i class="fa fa-trophy"></i>
             <h3 class="fontsubtitle">Prémios</h3>
-            <p>Haverá um conjunto de prémios para os vencedores assim como certificados de participação para todos os participantes.</p>
+            <p>Haverá um conjunto de prémios para os vencedores</p><a name="programa"></a> assim como certificados de participação para todos os participantes.
         </div>
     </div>
     <hr class="my-4">
@@ -126,8 +126,8 @@
     <div class="container paddin-especial">
         <h2 class="pb-3 pt-2 fonttitle">Programa do Evento</h2>
         <!--first section-->
-        <div class="row align-items-center">
-            <div class="col-lg-6">
+        <div class="row align-items-center wrappertestpimp">
+            <div class="col-lg-6 slideprograma" id="slidevimme">
                 <h5 class="fontsubtitle">Sessão de Abertura<br>13h-13h50</h5>
                 <p>A sessão de abertura decorrerá no auditório FC4 041 da FCUP. Serão, entre outros, apresentados os desafios e as regras da competição.</p>
             </div>
@@ -139,8 +139,8 @@
             </div>
         </div>
         <!--second section-->
-        <div class="row align-items-center justify-content-end">
-            <div class="col-lg-6 text-right">
+        <div class="row align-items-center justify-content-end wrappertestpimp">
+            <div class="col-lg-6 text-right" id="slidevimme2">
                 <h5 class="fontsubtitle">Prova<br>14h10-17h10</h5>
                 <p>O momento pelo qual todos esperam!</p>
             </div>
@@ -152,8 +152,8 @@
             </div>
         </div>
         <!--third section-->
-        <div class="row align-items-center">
-            <div class="col-lg-6">
+        <div class="row align-items-center wrappertestpimp">
+            <div class="col-lg-6" id="slidevimme">
                 <h5 class="fontsubtitle">Coffee Break<br>17h10-17h30</h5>
                 <p>Depois de 3h a trabalhar, chega a hora do lanche para recuperar energias.</p>
             </div>
@@ -165,10 +165,10 @@
             </div>
         </div>
         <!--forth section-->
-        <div class="row align-items-center justify-content-end">
-            <div class="col-lg-6 text-right">
+        <div class="row align-items-center justify-content-end wrappertestpimp">
+            <div class="col-lg-6 text-right" id="slidevimme2">
                 <h5 class="fontsubtitle">Teste e avaliação<br>17h30-19h20</h5>
-                <p>Aqui, todas as soluções serão testadas e avaliadas pelo juri.</p>
+                <p>Aqui, todas as soluções<a name="regulamento"></a> serão testadas e avaliadas pelo juri.</p>
             </div>
         </div>
     </div>
@@ -176,16 +176,24 @@
 </div>
     
        
-<!-- Fixed background -->  
+<!-- Regulamento -->  
 <figure>
     <div class="fixed-wrap">
         <div id="fixed">
         </div>
           <div class="middle"> 
-          <h1 class="reg1 fonttitle">Regulamento<br><div><button type="button" class="reg2 btn btn-outline-light btn-lg"><h2>Consultar</h2></button></div></h1>
+          <h1 class="reg1 fonttitle">Regulamento<br>
+              <div><a name="apoios"></a>
+                  <button type="button" class="reg2 btn btn-outline-light btn-lg"><h2>Consultar</h2></button>
+              </div>
+          </h1>
+          
           </div>
+    
     </div>
+    
 </figure> 
+<hr class="my-4">
 <!-- Apoios -->     
 <div class="container-fluid padding">
     <div class="row text-center padding">
@@ -193,51 +201,80 @@
             <h2 class="fonttitle">Apoios</h2>
         </div>
         <div class="col-12 social padding">
+            <a name="bestpart"></a>
             <a href="#"><i class="fa fa-info-circle"></i></a>
             <a href="#"><i class="fa fa-info-circle"></i></a>
             <a href="#"><i class="fa fa-info-circle"></i></a>
             <a href="#"><i class="fa fa-info-circle"></i></a>
             <a href="#"><i class="fa fa-info-circle"></i></a>
+            
         </div>
     </div>
 </div>
-
-<!-- FAQ -->
+<hr class="my-4">
+<!-- BEST Porto -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6 best-title">
+            <h2 class="fonttitle">BEST Porto</h2>
+            <h6 class="fontsubtitle subtitbest"><p>Board of European Students on Technology</p></h6>
+            <div class="textobestfim">
+                <p>O BEST, existe desde 1989 e é a maior rede europeia de estudantes de tecnologia. Presente em 95 universidades europeias, em 33 países, chegando a mais de 1.300.000 de estudantes de tecnologia, a associação pretende aproximar e melhorar as relações entre empresas, alunos de tecnologia e universidades através dos 3 serviços que prestamos: </p>
+                <ol class="tsttst">
+                    <li>Educação complementar: organizamos iniciativas que permitem, aos alunos, adquirir conhecimentos complementares aos que são leccionados nos programas curriculares, dando relevância ao desenvolvimento de "soft skills".</li><br>
+                    <li>Apoio à carreira: fornecemos aos estudantes de tecnologia e às empresas oportunidades para interagirem e partilharem conhecimentos de forma a aproximar os estudantes dos futuros empregadores.
+                    </li><br>
+                    <li>Envolvimento educacional: temos um papel activo na União Europeia e nas iniciativas relacionadas com o Ensino Superior Europeu, organizando eventos para debater estas temáticas e para recolher o input dos alunos, universidades e empresas.
+                    </li>
+                </ol>
+            </div>
+            <br>
+        </div>
+        <div class="col-lg-6 best-photo">
+            <img src="img/bestporto.png" class="img-fluid bestimgcorners">
+        </div>
+        
+    </div> 
+    <hr class="my-4">
+</div>
+    
+<!-- FAQ --> 
+<a class="jumptarget" name="FAQ"></a> 
 <button class="fun fontsubtitle" data-toggle="collapse" data-target="#faqsec">Frequently Asked Questions:</button>
 <div id="faqsec" class="collapse">    
-    <button class="collapsible"><center>Como e até quando me posso inscrever?</center></button>
+    <button class="collapsible textobold"><center>Como e até quando me posso inscrever?</center></button>
     <div class="content">
       <p><center>A partir do nosso site, em inscrição colectiva ou individual, ou dirigindo-te à nossa banca de promoção até ao dia 22 de outubro.</center></p>
     </div>
-    <button class="collapsible"><center>Qual o preço de inscrição?</center></button>
+    <button class="collapsible textobold"><center>Qual o preço de inscrição?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>Quantos membros tem cada equipa?</center></button>
+    <button class="collapsible textobold"><center>Quantos membros tem cada equipa?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>Qual é a duração do desafio?</center></button>
+    <button class="collapsible textobold"><center>Qual é a duração do desafio?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>Tenho direito a um certificado de participação?</center></button>
+    <button class="collapsible textobold"><center>Tenho direito a um certificado de participação?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>Posso-me inscrever estando só no 1ºano?</center></button>
+    <button class="collapsible textobold"><center>Posso-me inscrever estando só no 1ºano?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>Posso-me inscrever sendo estudante de mestrado ou doutoramento?</center></button>
+    <button class="collapsible textobold"><center>Posso-me inscrever sendo estudante de mestrado ou doutoramento?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>É preciso conhecimentos de engenharia para fazer a prova?</center></button>
-    <div class="content">
+    <button class="collapsible textobold"><center>É preciso conhecimentos de engenharia para fazer a prova?</center></button>
+    <div class="content textobold">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="collapsible"><center>Gostava de me juntar ao BEST. Posso inscrever-me e depois ainda fazer parte deste recrutamento?</center></button>
+    <button class="collapsible textobold"><center>Gostava de me juntar ao BEST. Posso inscrever-me e depois ainda fazer parte deste recrutamento?</center></button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
@@ -259,35 +296,13 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-<!-- BEST Porto -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-lg-6 best-title">
-            <h2 class="fonttitle">BEST Porto</h2>
-            <h6 class="fontsubtitle subtitbest"><p>Board of European Students on Technology</p></h6>
-            <div class="textobestfim">
-                <p>O BEST, existe desde 1989 e é a maior rede europeia de estudantes de tecnologia. Presente em 95 universidades europeias, em 33 países, chegando a mais de 1.300.000 de estudantes de tecnologia, a associação pretende aproximar e melhorar as relações entre empresas, alunos de tecnologia e universidades através dos 3 serviços que prestamos: </p>
-                <ol>
-                    <li>Educação complementar: organizamos iniciativas que permitem, aos alunos, adquirir conhecimentos complementares aos que são leccionados nos programas curriculares, dando relevância ao desenvolvimento de "soft skills".</li><br>
-                    <li>Apoio à carreira: fornecemos aos estudantes de tecnologia e às empresas oportunidades para interagirem e partilharem conhecimentos de forma a aproximar os estudantes dos futuros empregadores.
-                    </li><br>
-                    <li>Envolvimento educacional: temos um papel activo na União Europeia e nas iniciativas relacionadas com o Ensino Superior Europeu, organizando eventos para debater estas temáticas e para recolher o input dos alunos, universidades e empresas.
-                    </li>
-                </ol>
-            </div>
-            <br>
-        </div>
-        <div class="col-lg-6 best-title">
-            <img src="img/bestporto.png" class="img-fluid">
-        </div>
-    </div> 
-    <hr class="my-4">
-</div>
+<a name="contactos"></a>
+<hr class="my-4">    
 <!-- Connect -->
 <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-12">
-            <h2 class="fontsubtitle">Connect</h2>
+            <h2 class="fontsubtitle connecttitle">Connect</h2>
         </div>
         <div class="col-12 social padding">
             <a href="#"><i class="fab fa-facebook"></i></a>
