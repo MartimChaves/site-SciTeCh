@@ -13,8 +13,8 @@ html, body {
     font-family: 'Oswald', sans-serif;
 }
 /* TESTE TAMANHO LOGO*/
-.tsttst {
-    width: 150px;
+.logonavsize {
+    width: 170px;
     height: auto;
 }
 /* TESTE TAMANHO LOGO*/
@@ -22,10 +22,6 @@ html, body {
     font-size: 150%;
 }
 button:focus {outline:0;}
-.resizelogo {
-    width: 90%; /* you can use % */
-    height: auto;    
-}
 .navbar {
     padding: .8rem;
 }
@@ -35,12 +31,6 @@ button:focus {outline:0;}
 .nav-link {
     font-size: 1.1em !important;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%; 
-    z-index: 101;
-} 
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -105,8 +95,8 @@ button:focus {outline:0;}
     border: none;
 }
 .fun:hover {
-    background-color: #FFF27B;
-    color: #192D3A;
+    background-color: #FFB6C1;
+    color: black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .best-title {
@@ -122,12 +112,8 @@ button:focus {outline:0;}
 } 
 /**/
 .social a {
-    font-size: 4.5em;
-    padding: 3rem;
-}
-.social a {
-    font-size: 4.1em;
-    padding: 3rem;
+    font-size: 4em;
+    padding: 2rem;
 }
 .fa-facebook {
     color: #3d5998;
@@ -180,7 +166,18 @@ hr.light-100 {
 @media (max-width: 992px) {
     .social a {
     font-size: 4em;
-    padding: 2rem;
+    padding: 1.7rem;
+    }
+    .best-title {
+    margin-bottom: 0.1rem;
+    padding-bottom: -50%;
+    }
+    .best-photo {
+    margin-top: 0.1rem;
+    padding-top: -50%;
+    }
+    .nav-link {
+    font-size: 0.95em !important;
     }
   }
 @media (max-width: 768px) {
@@ -206,10 +203,6 @@ hr.light-100 {
     font-size: 2.5em;
     padding: 1.2rem;
     }  
-    .resizelogo {
-    width: 80%; /* you can use % */
-    height: auto;    
-    }
 }
 @media (max-width: 576px) {
     .carousel-caption {
@@ -226,9 +219,9 @@ hr.light-100 {
         padding: 4px 8px;
     }  
     .carousel-indicators {
-        /*padding-top: 0.4rem;
-        tab-size: 200%;*/
-        display: none;
+        padding-top: 0.4rem;
+        tab-size: 200%;
+        /*display: none;*/
     }
     .display-4 {
         font-size: 150%;
@@ -241,9 +234,12 @@ hr.light-100 {
         font-size: 100%;
         padding: -1rem;
     }
-    .resizelogo {
-    width: 70%; /* you can use % */
+    .logonavsize {
+    width: 150px; /* you can use % */
     height: auto;    
+    }
+    .tsttst {
+    margin-left: -5%;
     }
 }
 /*---Firefox Bug Fix --*/
@@ -285,7 +281,7 @@ figure {
 }
 .collapsible {
   background-color: #508AA8;
-  color: #182932;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -297,7 +293,8 @@ figure {
 }
 
 .collapsible:hover {
-  background-color: #a7c4d3;
+  background-color: #9dd1f1;
+  color: black;
 }
 /*.collapsible:after {
   content: '\002B';
@@ -319,6 +316,9 @@ figure {
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
+.textobold {
+    /*font-weight: bold;*/
+}
 .reg1 {
     color: #182932;
     background-color: #a7c4d3;
@@ -336,6 +336,15 @@ figure {
     cursor: pointer;
     border-color: #182932;
     padding-left: -1rem;
+}
+.best-photo {
+    margin-top: 1.5rem;
+    }
+.bestimgcorners {
+    border-radius: 20px;
+}
+.connecttitle {
+    margin-top: 1rem;
 }
 .icon-best {
     width: 50px;
