@@ -6,6 +6,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     color: #222;
 }
+
 .fontsubtitle {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -13,8 +14,8 @@ html, body {
     font-family: 'Oswald', sans-serif;
 }
 /* TESTE TAMANHO LOGO*/
-.tsttst {
-    width: 150px;
+.logonavsize {
+    width: 170px;
     height: auto;
 }
 /* TESTE TAMANHO LOGO*/
@@ -22,25 +23,27 @@ html, body {
     font-size: 150%;
 }
 button:focus {outline:0;}
-.resizelogo {
-    width: 90%; /* you can use % */
-    height: auto;    
-}
 .navbar {
     padding: .8rem;
 }
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:110px; /* fixed header height*/
+  margin-top:-110px; /* negative fixed header height */
+}
+/*.jumptarget2::before {
+  content:"";
+  display:block;
+  height: 50px; 
+  margin-top: -50px; 
+}*/
 .navbar-nav li {
     padding-right: 20px;
 }
 .nav-link {
     font-size: 1.1em !important;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%; 
-    z-index: 101;
-} 
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -74,19 +77,21 @@ button:focus {outline:0;}
     padding-bottom: 1rem;
 }
 .btn-primary {
-    background-color: #6648b1;
-    border: 1px solid #6648b1;
+    background-color: #9DD1F1;
+    border: 1px solid #9DD1F1;
+    color: black;
 }
 .btn-primary:hover {
-    background-color: #563d7c;
-    border: 1px solid #563d7c;
-}
+    background-color: #508AA8;
+    border: 1px solid #508AA8;
+    color: white;
+}     
 .welcome hr {
     border-top: 2px solid #b4b4b4;
     width: 70%;
     margin-top: .3rem;
     margin-bottom: 1rem;
-}
+} 
 .apoios {
     padding-top: 3rem;
     margin-top: 2rem;
@@ -96,22 +101,26 @@ button:focus {outline:0;}
 }
 
 .fun {
+    font-size: 150%;
     width: 100%;
+    height: 12%;
     padding-bottom: 10px;
     padding-top: 10px;
     display: block;
     background-color: #192D3A;
     color: white;
     border: none;
+    z-index: 50;
 }
 .fun:hover {
-    background-color: #FFF27B;
-    color: #192D3A;
+    background-color: #FFB6C1;
+    color: black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 .best-title {
     margin-top: 1.5rem;
-}
+} 
 .middle {
     position: absolute;
     top: 50%;
@@ -122,12 +131,8 @@ button:focus {outline:0;}
 } 
 /**/
 .social a {
-    font-size: 4.5em;
-    padding: 3rem;
-}
-.social a {
-    font-size: 4.1em;
-    padding: 3rem;
+    font-size: 4em;
+    padding: 2rem;
 }
 .fa-facebook {
     color: #3d5998;
@@ -179,13 +184,25 @@ hr.light-100 {
 /*---Media Queries --*/
 @media (max-width: 992px) {
     .social a {
-    font-size: 4em;
-    padding: 2rem;
+        font-size: 4em;
+        padding: 1.7rem;
+    }
+    .best-title {
+        margin-bottom: 0.1rem;
+        padding-bottom: -50%;
+    }
+    .best-photo {
+        margin-top: 0.1rem;
+        padding-top: -50%;
+    }
+    .nav-link {
+        font-size: 0.95em !important;
     }
   }
 @media (max-width: 768px) {
     .carousel-caption {
-        top: 45%
+        top: 45%;
+        font-size: 150%;
     }
     .carousel-caption h1 {
         font-size: : 350%
@@ -194,7 +211,7 @@ hr.light-100 {
         font-size: 140%;
         font-weight: 400;
         padding-bottom: .2rem;
-    }
+    } 
     .carousel-caption .btn {
         font-size: 95%;
         padding: 8px 14px;
@@ -203,23 +220,20 @@ hr.light-100 {
         font-size: 200%;
     }
     .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
+        font-size: 2.5em;
+        padding: 1.2rem;
     }  
-    .resizelogo {
-    width: 80%; /* you can use % */
-    height: auto;    
-    }
 }
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 40%
+        top: 20%;
+        font-size: 110%;
     }
-    .carousel-caption h1 {
+    .carousel-caption h1 { 
         font-size: : 250%
     }
     .carousel-caption h3 {
-        font-size: 110%;
+        font-size: 150%;
     }
     .carousel-caption .btn {
         font-size: 90%;
@@ -234,16 +248,29 @@ hr.light-100 {
         font-size: 150%;
     }
     .social a {
-    font-size: 2em;
-    padding: .7rem;
+        font-size: 2em;
+        padding: .7rem;
     }
     .jumbotron {
         font-size: 100%;
         padding: -1rem;
     }
-    .resizelogo {
-    width: 70%; /* you can use % */
-    height: auto;    
+    .logonavsize {
+        width: 150px; /* you can use % */
+        height: auto;    
+    }
+    .tsttst {
+        margin-left: -5%;
+    }
+    .spacebax {
+        width: 100%;
+        height: 11%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        display: block;
+        background-color: #192D3A;
+        border: none;
+        z-index: 50;
     }
 }
 /*---Firefox Bug Fix --*/
@@ -285,7 +312,7 @@ figure {
 }
 .collapsible {
   background-color: #508AA8;
-  color: #182932;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -297,7 +324,8 @@ figure {
 }
 
 .collapsible:hover {
-  background-color: #a7c4d3;
+  background-color: #9dd1f1;
+  color: black;
 }
 /*.collapsible:after {
   content: '\002B';
@@ -317,7 +345,11 @@ figure {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: white;
+  color: black;
+}
+.textobold {
+    /*font-weight: bold;*/
 }
 .reg1 {
     color: #182932;
@@ -337,9 +369,63 @@ figure {
     border-color: #182932;
     padding-left: -1rem;
 }
+/*.wrappertestpimp {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px; 
+    border: 1px solid black;*/
+}
+
+/*#slidevimme { /****************TENTATIVA DE ANIMAÇÃO*******************
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    /*height: 100px;
+    /*background: lightblue;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 1s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+/* #slidevimme2 {
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100px;
+    background: lightblue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide slidevimme2 {
+    100% { right: 0; }
+}
+
+@keyframes slide slidevimme2 {
+    100% { right: 0; }
+} */
+.best-photo {
+    margin-top: 1.5rem;
+    }
+.bestimgcorners {
+    border-radius: 20px;
+}
+.connecttitle {
+    margin-top: 1rem;
+}
 .icon-best {
-    width: 50px;
-    height: 50px;
+    width: 180px;
+    height: auto;
 } 
 .best-footer {
     padding-top: 10px;
