@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SciTeCh 2018</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- <script src="js/singles.js"></script> -->
+    <link href="styleSTC.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Asset%2023.png" />
+</head>
+    
+<body>
+<div class="spacebax"></div>  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/SciTeCh-18.svg" class="logonavsize"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#programa">Programa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#regulamento">Regulamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#apoios">Apoios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bestpart">BEST</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#FAQ">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactos">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+ $(function(){ 
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+</script>
+<!-- Carousel slider -->
+<!-- <div class="testing123"><p><center>Test </center></p></div> -->    
+<div id="slides" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-caption">
+                <h3 class="fontsubtitle">Do que estás à espera?</h3>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfO0MsrrKu6cYHSwFsBfuu35PW8-zNMTybwXC2XRyWWvfy5Dw/viewform?usp=sf_link" target="_blank"><button type="button" class="btn btn-primary btn-lg">Inscreve-te!</button></a>
+        </div>
+        <div class="carousel-item active imgbck">
+            <img src="img/competicaototal.jpg">
+        </div>
+        <div class="carousel-item imgbck">
+            <img src="img/td1.jpg">
+        </div>
+        <div class="carousel-item imgbck">
+            <img src="img/cs2.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div> 
+    
+<!-- Jumbotron -->
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-12">
+            <p><center><h5>Uma competição estimulante para todos os cursos!</h5></center></p>
+        </div>
+    </div>
+</div>
+    
+<!-- welcome center-->    
+
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4 fonttitle">Science &#38; Technology Challenge</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">Vem testar as tuas capacidades!</p>
+        </div>
+    </div>
+</div>
+    
+<!--- Four Column Section -->
+<div class="container-fluid padding">
+    <div class="row text-center padding fixparamargens">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <i class="	fa fa-users"></i>
+            <h3 class="fontsubtitle">Equipas de 4</h3>
+            <p>Aceitam-se inscrições como equipa de 4 elementos ou individuais. As inscrições individuais serão depois agrupadas em equipas pela organização.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <i class="fa fa-wrench"></i>
+            <h3 class="fontsubtitle">Team Design</h3>
+            <p>Durante a competição, a equipa deverá construir um protótipo funcional que resolva um desafio proposto no início.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <i class="fa fa-briefcase"></i>
+            <h3 class="fontsubtitle">Case Study</h3>
+            <p>Durante a competição, a equipa deverá realizar um relatório/apresentação para solucionar um desafio proposto no início.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <i class="fa fa-trophy"></i>
+            <h3 class="fontsubtitle">Prémios</h3>
+            <p>Haverá um conjunto de prémios para os vencedores assim como certificados de participação para todos os participantes.</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>    
+    
+<!-- Event Program-->
+<a class="jumptarget" name="programa"></a>
+<h2 class="pb-3 pt-2 fonttitle"><center>Programa do Evento</center></h2>
+<section id="PROG">
+<div id="schedule" class="timeline">
+  <!--<div class="boxy left">
+    <div class="contentprogrm">
+      <h2>Sessão Networking</h2>
+      <p>10h-12h <br><br> Nesta sessão terás oportunidade de ficar a conhecer empresas, e ficar a conhecer um bocadinho mais o mundo do trabalho.</p>
+    </div>
+  </div>-->
+  <div class="boxy left">
+    <div class="contentprogrm">
+      <h2>Sessão de Abertura</h2>
+      <p>13h-13h50<br><br>A sessão de abertura decorrerá no auditório FC4 041 da FCUP. Serão, entre outros, apresentados os desafios e as regras da competição.</p>
+    </div>
+  </div>
+  <div class="boxy right">
+    <div class="contentprogrm">
+      <h2>Prova</h2>
+      <p>14h-17h<br><br>O momento pelo qual todos esperam!</p>
+    </div>
+  </div>
+  <div class="boxy left">
+    <div class="contentprogrm">
+      <h2>Coffee Break</h2>
+      <p>17h-17h45 <br><br> Depois de 3h a trabalhar, chega a hora do lanche para recuperar energias.</p>
+    </div>
+  </div>
+  <div class="boxy right">
+    <div class="contentprogrm">
+      <h2>Apresentações</h2>
+      <p>17h45-19h20<br><br>Aqui, todas as soluções serão testadas e avaliadas pelo juri.</p>
+    </div>
+  </div>
+  <div class="boxy left">
+    <div class="contentprogrm">
+      <h2>Sessão de encerramento</h2>
+      <p>19h20-20h00<br><br>A sessão de encerramento será onde vamos terminar esta competição.</p>
+    </div>
+  </div>
+</div>
+</section>
+<!--<div class="container-fluid blue-bg">
+    <div class="container paddin-especial">
+        <h2 class="pb-3 pt-2 fonttitle">Programa do Evento</h2>
+        <!-- Sess Networking 
+        <div class="row align-items-center wrappertestpimp">
+            <div class="col-md-6 col-lg-6 slideprograma" id="slidevimme">
+                <h5 class="fontsubtitle">Sessão Networking<br>10h-12h</h5>
+                <p>Nesta sessão terás oportunidade de ficar a conhecer empresas, e ficar a conhecer um bocadinho mais o mundo do trabalho.</p>
+            </div>
+        </div>
+        <!--path between 1-2
+        <div class="row timeline">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </div>
+        <!--Sess Abertura
+        <div class="row align-items-center justify-content-end wrappertestpimp">
+            <div class="col-md-6 col-lg-6 text-right" id="slidevimme2">
+                <h5 class="fontsubtitle">Sessão de Abertura<br>13h-13h50</h5>
+                <p>A sessão de abertura decorrerá no auditório FC4 041 da FCUP. Serão, entre outros, apresentados os desafios e as regras da competição.</p>
+            </div>
+        </div>
+        <!--path between 1-2
+        <div class="row timeline">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </div>
+        <!--second section
+        <div class="row align-items-center wrappertestpimp">
+            <div class="col-md-6 col-lg-6 slideprograma" id="slidevimme">
+                <h5 class="fontsubtitle">Prova<br>14h-17h</h5>
+                <p>O momento pelo qual todos esperam!</p>
+            </div>
+        </div>
+        <!--path between 2-3
+        <div class="row timeline">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </div>
+        <!--Coffe break
+        <div class="row align-items-center">
+        </div>
+        <div class="row align-items-center justify-content-end wrappertestpimp">
+            <div class="col-md-6 col-lg-6 text-right" id="slidevimme2">
+                <h5 class="fontsubtitle">Coffee Break<br>17h-17h45</h5>
+                <p>Depois de 3h a trabalhar, chega a hora do lanche para recuperar energias.</p>
+            </div>
+        </div>
+        <!--path between 3-4
+        <div class="row timeline">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </div>
+        <!--Apresnetacoes
+        <div class="row align-items-center wrappertestpimp">
+            <div class="col-md-6 col-lg-6" id="slidevimme">
+                <h5 class="fontsubtitle">Apresentações<br>17h45-19h20</h5>
+                <p>Aqui, todas as soluções serão testadas e avaliadas pelo juri.</p>
+            </div>
+        </div>
+        <!--path between 
+        <div class="row timeline">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </div>
+        <!--Sess encerramento 
+        <div class="row align-items-center justify-content-end wrappertestpimp">
+            <div class="col-md-6 col-lg-6 text-right" id="slidevimme2">
+                <h5 class="fontsubtitle">Sessão de encerramento<br>19h20-20h00</h5>
+                <p>A sessão de encerramento irá ser na sala A01**inventei**, onde vamos dar por terminada esta competição.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+</div> -->
+    
+       
+<!-- Regulamento -->
+<hr class="my-4">
+<a class="jumptarget" name="regulamento"></a> 
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+        </div>
+          <div class="middle"> 
+              <h1 class="reg1 fonttitle">Regulamento<br>
+                  <div>
+                      <a href="https://drive.google.com/file/d/153iL616JbBugTc01eCFl6M1WtkAcyfvv/view?usp=sharing" target="_blank">
+                          <button type="button" class="reg2 btn btn-outline-light btn-lg">
+                            <h2>Consultar</h2>
+                          </button>
+                      </a>
+                  </div>
+              </h1>
+          </div>
+    </div>
+</figure> 
+<hr class="my-4">
+<!-- Apoios -->    
+<a class="jumptarget" name="apoios"></a>
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12 apoios">
+            <h2 class="fonttitle">Apoios</h2>
+        </div>
+        <div class="col-12 social padding">
+            <img src="img/parsas/aefeup.svg" class="logosapoios">
+            <img src="img/parsas/camporto.svg" class="logosapoios">
+            <img src="img/parsas/FCUP.svg" class="logosapoios">
+            <img src="img/parsas/FEUP.svg" class="logosapoios">
+            <img src="img/parsas/UPorto.svg" class="logosapoios">
+            
+        </div>
+    </div>
+</div>
+<hr class="my-4">
+<!-- BEST Porto -->
+<a class="jumptarget" name="bestpart"></a>
+<div class="container-fluid padding">
+    <div class="row padding fixparamargens">
+        <div class="col-lg-6 best-title">
+            <h2 class="fonttitle">BEST Porto</h2>
+            <h6 class="fontsubtitle subtitbest"><p>Board of European Students on Technology</p></h6>
+            <div class="textobestfim">
+                <p>O BEST, existe desde 1989 e é a maior rede europeia de estudantes de tecnologia. Presente em 95 universidades europeias, em 33 países, chegando a mais de 1.300.000 de estudantes de tecnologia, a associação pretende aproximar e melhorar as relações entre empresas, alunos de tecnologia e universidades através dos 3 serviços que prestamos: </p>
+                <ol class="tsttst">
+                    <li>Educação complementar: organizamos iniciativas que permitem, aos alunos, adquirir conhecimentos complementares aos que são leccionados nos programas curriculares, dando relevância ao desenvolvimento de "soft skills".</li><br>
+                    <li>Apoio à carreira: fornecemos aos estudantes de tecnologia e às empresas oportunidades para interagirem e partilharem conhecimentos de forma a aproximar os estudantes dos futuros empregadores.
+                    </li><br>
+                    <li>Envolvimento educacional: temos um papel activo na União Europeia e nas iniciativas relacionadas com o Ensino Superior Europeu, organizando eventos para debater estas temáticas e para recolher o input dos alunos, universidades e empresas.
+                    </li>
+                </ol>
+            </div>
+            <br>
+        </div>
+        <div class="col-lg-6 best-photo">
+            <img src="img/imagem_best_bonitinho.jpg" class="img-fluid bestimgcorners">
+        </div>
+        
+    </div> 
+    <hr class="my-4">
+</div>
+    
+<!-- FAQ --> 
+<a class="jumptarget" name="FAQ"></a> 
+<button class="fun fontsubtitle" data-toggle="collapse" data-target="#faqsec">Frequently Asked Questions:</button>
+<div id="faqsec" class="collapse">    
+    <button class="collapsible textobold"><center>Como e até quando me posso inscrever?</center></button>
+    <div class="content">
+      <p><center>Podes-te inscrever até dia 20 de outubro, através do formulário de inscrição que encontras no início desta página.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>Qual o preço de inscrição?</center></button>
+    <div class="content">
+      <p><center>A inscrição é gratuita, no entanto tens de fazer o depósito de uma caução de 5€, por participante, para garantires a tua inscrição. Esta será devolvida após a competição.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>Quantos membros tem cada equipa?</center></button>
+    <div class="content">
+      <p><center>Cada equipa é composta por 4 elementos, no entanto podes inscrever-te individualmente ou em equipas mais pequenas.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>Qual é a duração do desafio?</center></button>
+    <div class="content">
+      <p><center>O desafio terá a duração de 3 horas.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>Tenho direito a um certificado de participação?</center></button>
+    <div class="content">
+      <p><center>Sim, após a competição ser-te-á enviado um certificado de participação.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>Posso-me inscrever estando só no 1ºano?</center></button>
+    <div class="content">
+      <p><center>Sim, podes. As nossas competições destinam-se a todos os alunos da Faculdade de Ciências da Universidade do Porto e da Faculdade de Engenharia da Universidade do Porto.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>Posso-me inscrever sendo estudante de mestrado?</center></button>
+    <div class="content">
+      <p><center>Sim, desde que sejas aluno de mestrado da FEUP ou FCUP.</center></p>
+    </div>
+    <button class="collapsible textobold"><center>É preciso conhecimentos de engenharia para fazer a prova?</center></button>
+    <div class="content textobold">
+      <p><center>Não, as provas são desenhadas para que todos os participantes tenham oportunidade de resolver com sucesso os desafios.</center></p>
+    </div>
+    <!-- <button class="collapsible textobold"><center>Gostava de me juntar ao BEST. Posso inscrever-me e depois ainda fazer parte deste recrutamento?</center></button>
+    <div class="content">
+      <p><center>Podes-te inscrever até dia 20 de outubro, através do formulário de inscrição que encontras no início desta página.</center></p>
+    </div> -->
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<a class="jumptarget2" name="contactos"></a>
+<hr class="my-4">    
+<!-- Connect -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-md-12">
+            <h2 class="fontsubtitle connecttitle">Connect</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="https://www.facebook.com/bestporto/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bestporto/"><i class="fab fa-instagram"></i></a>
+            <a href="https://pt.linkedin.com/company/best-porto"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.flickr.com/photos/bestporto/"><i class="fab fa-flickr"></i></a>
+            <a href="https://www.youtube.com/user/BESTporto"><i class="fab fa-youtube"></i></a> 
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3">
+                <!-- <div style="display:inline-block;vertical-align:top;">
+                    <img src="img/best_icon.png" class="icon-best" alt="img">
+                </div>
+                <div style="display:inline-block;">
+                    <div><h4 class="best-footer fonttitle">BEST Porto</h4></div>
+                </div> -->
+                <img class="icon-best" src="img/BEST_White.svg">
+                <hr class="light">
+                <p>B329 @ FEUP</p>
+                <p>scitech@bestporto.org</p>
+                <p>Rua Dr. Roberto Frias, s/n</p>
+                <p>Paranhos, Porto</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <hr class="light">
+                <h6 class="fontsubtitle">Responsável pelo Evento</h6>
+                <h6>Afonso Soares</h6>
+                <hr class="light">
+                <img src="img/afonso2.jpeg" class="foto-contactos" alt="Avatar">
+                <p class="fixmargensconts">afonso.soares@bestporto.org<br>+351 913 808 027</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <hr class="light">
+                <h6 class="fontsubtitle">Responsável de Relações Empresariais</h6>
+                <h6>Alberto Santos</h6>
+                <hr class="light">
+                <img src="img/alberto.jpeg" class="foto-contactos" alt="Avatar">
+                <p class="fixmargensconts">alberto.santos@bestporto.org<br>+351 912 359 655</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <hr class="light">
+                <h6 class="fontsubtitle">Secretária do Evento</h6>
+                <h6>Andreia Silva</h6>
+                <hr class="light">
+                <img src="img/andreia2.jpg" class="foto-contactos" alt="Avatar">
+                <p class="fixmargensconts">andreia.silva@bestporto.org<br>+351 911 098 507</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
