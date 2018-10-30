@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+.fontsubtitle {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.fonttitle {
+    font-family: 'Oswald', sans-serif;
+}
+/* TESTE TAMANHO LOGO*/
+.logonavsize {
+    width: 170px;
+    height: auto;
+}
+/* TESTE TAMANHO LOGO*/
+.subtitbest {
+    font-size: 150%;
+}
+button:focus {outline:0;}
+.navbar {
+    padding: .8rem;
+}
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:110px; /* fixed header height*/
+  margin-top:-110px; /* negative fixed header height */
+}
+/*.jumptarget2::before {
+  content:"";
+  display:block;
+  height: 50px;
+  margin-top: -50px;
+}*/
+.navbar-nav li {
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+/* ANIMACAO HAMB MENU
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+***************************************/
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.imgbck {
+    /*-webkit-filter: blur(3px); /* Safari 6.0 - 9.0
+    filter: blur(3px); */
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%
+    transform: translateY(-50%);
+}
+.carousel-caption h1 {
+    font-size: : 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+}
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+}
+.jumbotron {
+    padding: 0rem;
+    border-radius: 0;
+    font-size: 150%;
+}
+.padding {
+    padding-bottom: 1rem;
+}
+.btn-primary {
+    background-color: #9DD1F1;
+    border: 1px solid #9DD1F1;
+    color: black;
+    font-size: 200%;
+}
+.btn-primary:hover {
+    background-color: #508AA8;
+    border: 1px solid #508AA8;
+    color: white;
+}
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 70%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.fixparamargens {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.apoios {
+    padding-top: 3rem;
+    margin-top: 2rem;
+}
+.logosapoios {
+    width: 250px;
+    height: auto;
+    margin: 25px;
+}
+/*#programa {
+    float: right;
+}*/
+/*THE NEW ORDER*/
+* {
+    box-sizing: border-box;
+}
+
+#PROG {
+    background-color: #9DD1F1;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #192D3A;
+    top: 0;
+    bottom: 0;
+    left: 49.7%;
+    margin-left: -3px;
+}
+
+/* boxy around content */
+.boxy {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.boxy::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -10px;
+    background-color: white;
+    border: 4px solid #192D3A;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the boxy to the left */
+.left {
+    left: 0;
+}
+
+/* Place the boxy to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left boxy (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 37px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right boxy (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 37px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+
+/* Fix the circle for boxys on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.contentprogrm {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 30px;
+    color: #031927;
+}
+/*END OF NEW ORDER*/
+.fun {
+    font-size: 150%;
+    width: 100%;
+    height: 12%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
+    background-color: #192D3A;
+    color: white;
+    border: none;
+    z-index: 50;
+}
+.fun:hover {
+    background-color: #FFB6C1;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+.best-title {
+    margin-top: 1.5rem;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+}
+/**/
+.social a {
+    font-size: 4em;
+    padding: 2rem;
+}
+.fa-facebook {
+    color: #3d5998;
+}
+.fa-flickr {
+    color: #fe0883;
+}
+.fa-linkedin {
+    color: #4875b4;
+}
+.fa-twitter{
+    color: #00aced;
+}
+.fa-instagram {
+    color: #517fa4;
+}
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-flickr:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #d5d5d5;
+}
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 90%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+footer a {
+    color: #d5d5d5;
+}
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1remn;
+}
+/*---Media Queries --*/
+/*@media (min-width: 1024px) {
+    .imgbck {
+        height: 80%;
+        width: 100%;
+        object-fit: contain;
+    }
+}*/
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 1.7rem;
+    }
+    .best-title {
+        margin-bottom: 0.1rem;
+        padding-bottom: -50%;
+    }
+    .best-photo {
+        margin-top: 0.1rem;
+        padding-top: -50%;
+    }
+    .nav-link {
+        font-size: 0.95em !important;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width boxys */
+    .boxy {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .boxy::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 19px;
+    }
+
+    /* Make all right boxys behave like the left ones */
+    .right {
+        left: 0%;
+    }
+    .carousel-caption {
+        /*top: 45%;*/
+        font-size: 150%;
+    }
+    .carousel-caption h1 {
+        font-size: : 350%
+    }
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .display-4 {
+        font-size: 200%;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .btn-primary {
+        font-size: 150%;
+    }
+    .carousel-caption {
+        /*top: 30%;*/
+        font-size: 110%;
+    }
+    .carousel-caption h1 {
+        font-size: : 250%
+    }
+    .carousel-caption h3 {
+        font-size: 150%;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+    .carousel-indicators {
+        /*padding-top: 0.4rem;
+        tab-size: 200%;*/
+        display: none;
+    }
+    .display-4 {
+        font-size: 150%;
+    }
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+    .jumbotron {
+        font-size: 100%;
+        padding: -1rem;
+    }
+    .logonavsize {
+        width: 150px; /* you can use % */
+        height: auto;
+    }
+    .tsttst {
+        margin-left: -5%;
+    }
+    .spacebax {
+        width: 100%;
+        height: 11%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        display: block;
+        background-color: #192D3A;
+        border: none;
+        z-index: 50;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/* Fixed Image*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/regulamentoblur2.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+.collapsible {
+  background-color: #508AA8;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border: double 4px transparent;
+}
+
+.collapsible:hover {
+  background-color: #9dd1f1;
+  color: black;
+}
+/*.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  padding-left: 150px;
+  margin-left: 5px;
+  margin-top: -22px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+} */
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  color: black;
+}
+.textobold {
+    /*font-weight: bold;*/
+}
+.reg1 {
+    color: #182932;
+    background-color: #a7c4d3;
+    padding: 1rem;
+}
+.reg2 {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.reg2:hover {
+    background-color: #a7c4d3;
+    color: #182932;
+    cursor: pointer;
+    border-color: #182932;
+    padding-left: -1rem;
+}
+/*.wrappertestpimp {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;*/
+}
+
+/*#slidevimme { /****************TENTATIVA DE ANIMAÇÃO*******************
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    /*height: 100px;
+    /*background: lightblue;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 1s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+/* #slidevimme2 {
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100px;
+    background: lightblue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide slidevimme2 {
+    100% { right: 0; }
+}
+
+@keyframes slide slidevimme2 {
+    100% { right: 0; }
+} */
+.best-photo {
+    margin-top: 1.5rem;
+    }
+.bestimgcorners {
+    border-radius: 20px;
+}
+.connecttitle {
+    margin-top: 1rem;
+}
+.icon-best {
+    width: 180px;
+    height: auto;
+}
+.best-footer {
+    padding-top: 10px;
+    padding-bottom: -5px;
+}
+.foto-contactos {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.textobestfim {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.fixmargensconts {
+    margin-top: 7px;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
